@@ -1,9 +1,11 @@
 name = ''
 while not name:
-    print('Enter your name:')
+    print("Welcome! Please enter your name:")
     name = input()
-print('How many guests will you have?')
+    question = f"Hello {name}. How many guests will you have tonight?"
+    print(question)
 number_of_guests = input()
 if number_of_guests:
-    print('Be sure to have enough room for all ' + number_of_guests  + ' guests!')
-print('Done')
+    message = f"We will be sure to have enough room for all {number_of_guests} guests!"
+    print(message)
+print('Thank you!')
