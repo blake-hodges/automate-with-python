@@ -7,9 +7,10 @@ while True:
     user_input = input("Your guess: ")
     if user_input == 'exit':
         break
+    if not user_input.isdigit():
+        print("\nPlease enter a digit between 1 and 20.")
+        continue
     guess = int(user_input)
-    if (guess == 'exit'):
-        break
     if guess == target:
         print("\nGood guess. You are correct!")
         break
